@@ -35,7 +35,7 @@ export default function Projects() {
                             data-aos-once="true"
                             data-aos-easing="ease-in-out"
                             data-aos-offset="250"
-                            data-aos-duration="400"
+                            data-aos-duration="401"
                             data-aos-delay={project.number}
                             className={`bg-[${project.backgroundColor}]`}
                         >
