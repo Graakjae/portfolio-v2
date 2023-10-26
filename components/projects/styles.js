@@ -30,10 +30,42 @@ export const Grid = styled.div`
     grid-gap: 30px;
 `;
 
+// const InputWrapper = styled.div<{
+//   borderColor?: string;
+//   disabled?: boolean;
+//   statusColor?: Status;
+// }>(({ borderColor, disabled }) => ({
+//   backgroundColor: "white",
+//   width: "40%",
+//   maxWidth: "600px",
+//   position: "relative",
+//   display: "flex",
+//   borderRadius: "5px",
+//   height: "20px",
+//   padding: "14px 16px",
+//   marginTop: "8px",
+//   boxSizing: "content-box",
+//   boxShadow: "0 0px 10px 0 rgba(0, 0, 0, 0.25);",
+//   ["&:focus"]: {
+//     border: "1px solid #348DF7",
+//   },
+// }));
+
+// export const Wrapper =
+//     styled.div <
+//     {} >
+//     (({}) => ({
+//         backgroundColor: projectsData.backgroundColor,
+//         width: "100%",
+//         height: "450px",
+//         display: "flex",
+//         justifyContent: "center",
+//         alignItems: "center"
+//     }));
+
 export const Wrapper = styled.div`
-    justify-content: space-between;
     width: 100%;
-    height: 450px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;

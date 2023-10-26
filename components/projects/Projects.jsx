@@ -16,7 +16,6 @@ export default function Projects() {
     return (
         <StyledProjects id="Projects">
             <h2
-                className="section-heading"
                 data-aos="fade-up"
                 data-aos-once="true"
                 data-aos-easing="ease-in-out"
@@ -28,19 +27,17 @@ export default function Projects() {
             </h2>
             <Grid>
                 {projectsData.map(project => (
-                    <div>
+                    <div key={nanoid()}>
                         <Wrapper
-                            key={nanoid()}
                             data-aos="fade-up"
                             data-aos-once="true"
                             data-aos-easing="ease-in-out"
                             data-aos-offset="250"
                             data-aos-duration="401"
                             data-aos-delay={project.number}
-                            className={`bg-[${project.backgroundColor}]`}
                         >
                             <StyledPic>
-                                <Link key={nanoid()} className="wrapper2" href={`/projects/${project.name}`}>
+                                <Link className="wrapper2" href={`/projects/${project.name}`}>
                                     <Image
                                         className="img"
                                         src={project.img[0]}
