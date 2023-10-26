@@ -52,8 +52,8 @@ export const StyledIcons = styled.ul`
             padding: 0px;
 
             svg {
-                width: 22px;
-                height: 22px;
+                width: 23px;
+                height: 23px;
                 color: #a8b2d1;
                 margin-left: 10px;
 
