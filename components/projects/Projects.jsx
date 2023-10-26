@@ -35,6 +35,7 @@ export default function Projects() {
                             data-aos-offset="250"
                             data-aos-duration="401"
                             data-aos-delay={project.number}
+                            className={`bg-[${project.backgroundColor}]`}
                         >
                             <StyledPic>
                                 <Link className="wrapper2" href={`/projects/${project.name}`}>
@@ -53,17 +54,12 @@ export default function Projects() {
                             <h3>{project.name}</h3>
                             <StyledIcons>
                                 <li key={nanoid()}>
-                                    <a href={project.urls.github} target="_blank">
-                                        <Icon name="GitHub" className="w-[20px]" />
+                                    <a href={project.urls.github} target="_blank" className="w-[23px] h-[23px]">
+                                        <Icon name="GitHub" />
                                     </a>
-                                    <a href={project.urls.website} target="_blank">
+                                    <a href={project.urls.website} target="_blank" className="w-[23px] h-[23px]">
                                         <Icon name="External" />
                                     </a>
-                                    {project.urls.Xd === undefined ? null : (
-                                        <a href={project.urls.Xd} target="_blank">
-                                            <Icon name="Xd" />
-                                        </a>
-                                    )}
                                 </li>
                             </StyledIcons>
                         </ProjectHeader>
